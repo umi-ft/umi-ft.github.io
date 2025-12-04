@@ -245,7 +245,7 @@
               <b><u>Task</u></b> The robot should wipe the whitebaord until it's clean; locate the eraser, approach and grasp the eraser, retract and locate markings on the whiteboard, wipe until no markings remain.
             </p>
             <p>
-              <b><u>Comparisons</u></b> [No compliance] policy struggles to modulate contact force and often triggers a safety fault due to excessive contact force. [No force] policy also fails to grasp unseen narrower erasers. [Contact mic] policy almost always triggers a safety fault due to excessive contact force.
+              <b><u>Comparisons</u></b> [No compliance] policy struggles to modulate contact force and often performs an incomplete wipe or triggers a safety fault due to excessive contact force. [No force] policy also fails to grasp unseen narrower erasers. [Contact mic] policy often triggers a safety fault due to excessive contact force.
             </p>
           </div> 
       </div>
@@ -270,12 +270,20 @@
 
 
   <!-- Zucchini -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-full">
-        <h2 class="title is-3">Task 2: Skewer Zucchini 🥒</h2>
+    <div class="columns is-centered has-text-left">
+        <div class="column is-full">
+          <h2 class="title is-3">Task 2: Skewer Zucchini 🥒</h2>
+            <div class="content has-text-justified">
+              <p>
+                <b><u>Task</u></b> The robot should skewer a zucchini on a stick; grasp the zucchini slice firmly, and push it onto a stick until punctured.
+              </p>
+              <p>
+                <b><u>Comparisons</u></b> [No compliance] performance similar to our method due to the compliance of the zucchini itself. [No force] policy fails to resist the reaction force between the stick and the zucchini. The zucchini often slips out of grasp.
+              </p>
+            </div> 
+        </div>
       </div>
-    </div>
-    
+ 
     <div class="columns is-centered">
       <div class="column">
         <video id="skewer_zucchini_ours" autoplay muted loop playsinline height="100%">
@@ -295,9 +303,17 @@
 
 
   <!-- Lightbulb Insertion -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-left">
       <div class="column is-full">
         <h2 class="title is-3">Task 3: Lightbulb Insertion 💡</h2>
+          <div class="content has-text-justified">
+            <p>
+              <b><u>Task</u></b> The robot should insert a lightbulb in a socket; grasp the bulb firmly, approach the socket, make gentle contact and rotate the bulb until the bayonet pin is aligned with the slit on the socket, insert while overcoming the reaction force of the spring-loaded electrode, and rotate to light up the bulb.
+            </p>
+            <p>
+              <b><u>Comparisons</u></b> [No compliance] policy may fail to maintain contact of the bulb with the socket during haptic search. This can cause the bayonet pin to rotate past the slit. [No force] policy displays lower accuracy in motion, resulting in misalignment between the bulb and the socket. [Contact mic] policy failed due to excessive rotation of the bulb during haptic search or slippage of the bulb during insertion. 
+            </p>
+          </div> 
       </div>
     </div>
     
