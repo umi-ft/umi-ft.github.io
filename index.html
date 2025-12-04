@@ -214,6 +214,7 @@
           <p>
             UMI-FT consists of an iPhone that provdies RGB vision, ultrawide RGB, depth, and pose using the ARKit.
             Each finger is sensorized using a CoinFT to capture per-finger wrench information during manipulation.
+            The multimodal data is used to train a modified adaptive compliance policy, blending diffusion policy with a low-level compliance controller.
           </p>
 
         </div>
@@ -236,11 +237,21 @@
 
 
   <!-- Whiteboard Wiping -->
-    <div class="columns is-centered has-text-centered">
+    <div class="columns is-centered has-text-left">
       <div class="column is-full">
-        <h2 class="title is-3">Task 1: Whiteboard Wiping</h2>
+        <h2 class="title is-4">(1) Whiteboard Wiping </h2>
+          <div class="content has-text-justified">
+            <p>
+              <b><u>Task</u></b> The robot should wipe the whitebaord until it's clean; locate the eraser, approach and grasp the eraser, retract and locate markings on the whiteboard, wipe until no markings remain.
+            </p>
+            <p>
+              <b><u>Comparisons</u></b> [No compliance] policy struggles to modulate contact force and often triggers a safety fault due to excessive contact force. [No force] policy also fails to grasp unseen narrower erasers. [Contact mic] policy almost always triggers a safety fault due to excessive contact force.
+            </p>
+          </div> 
       </div>
     </div>
+
+  
     
     <div class="columns is-centered">
       <div class="column">
