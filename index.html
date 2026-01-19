@@ -229,6 +229,28 @@
               The multimodal data is used to train a modified adaptive compliance policy, blending diffusion policy with a low-level compliance controller.
           </p>
         </div>
+
+        <div style="width: 100%; text-align: left; padding-right: 20px;">
+          <img src="./static/images/control_structure.png" style="width: 100%; height: auto;">
+        </div>
+
+        <div class="content has-text-justified">
+          </p>
+            UMI-FT controller architecture. The same force/torque measurement is used in all three control loops. Proprioception is omitted in the figure for clarity.
+            The learned policy runs the slowest and generates reference targets to the other two model-based controllers.
+          </p>
+        </div>
+
+        <video id="umift-push-demo" autoplay muted loop playsinline height="100%">
+          <source src="./static/videos/umift-push-demo.mp4" type="video/mp4">
+        </video>
+
+        <div class="content has-text-justified">
+          </p>
+            In particular, CoinFT reading is directly used in standard compliance/force controllers to provide
+            delicate 6D compliance control and real-time force modulation.
+          </p>
+        </div>
       </div>
     </div>
     <!--/ Hardware Introduction. -->
